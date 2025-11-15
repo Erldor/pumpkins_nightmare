@@ -1,0 +1,41 @@
+name: pumpkin_nightmare
+description: "Flutter-based 2D runner."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flame: ^1.33.0
+  just_audio: ^0.10.5
+  audio_session: ^0.2.2
+  
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_launcher_icons: "^0.14.4"
+
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Medium.ttf
+
+
+  assets:
+    - assets/images/
+    - assets/audio/
+    - assets/icons/
